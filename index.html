@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AS Cake Shop</title>
+    <meta
+      name="description"
+      content="AS Cake Shop - cheesecake radionica iz Kaluđerice sa pažljivo pripremljenim ukusima i dostavom."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav container">
+          <a class="logo" href="#top" aria-label="AS Cake Shop">
+            <img class="logo-image" src="slike/logo.jpeg" alt="AS Cake Shop logo" />
+            <span class="logo-text">Cake Shop</span>
+          </a>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Otvori meni">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-panel">
+            <ul class="nav-links">
+              <li><a href="#top" data-i18n="nav.home">Početna</a></li>
+              <li><a href="#about" data-i18n="nav.about">O nama</a></li>
+              <li class="dropdown">
+                <button class="dropdown-toggle" type="button" data-i18n="nav.cheesecakes">
+                  Cheesecake
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#cake-dubai" data-i18n="cakes.dubai.name">Dubai Cheesecake</a></li>
+                  <li><a href="#cake-ferrero" data-i18n="cakes.ferrero.name">Ferrero Cheesecake</a></li>
+                  <li><a href="#cake-lemon" data-i18n="cakes.lemon.name">Lemon Cheesecake</a></li>
+                  <li><a href="#cake-pistachio" data-i18n="cakes.pistachio.name">Pistać-Malina Cheesecake</a></li>
+                  <li><a href="#cake-speculaas" data-i18n="cakes.speculaas.name">Speculaas Cheesecake</a></li>
+                </ul>
+              </li>
+              <li><a href="#raw-cake" data-i18n="nav.rawCake">Raw Cake</a></li>
+              <li><a href="#delivery" data-i18n="nav.delivery">Dostava</a></li>
+              <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+              <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+
+            <div class="lang-switch" role="group" aria-label="Language switch">
+              <button class="lang-btn active" type="button" data-lang="sr">SR</button>
+              <button class="lang-btn" type="button" data-lang="en">EN</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <span class="eyebrow" data-i18n="hero.eyebrow">Handmade cheesecake studio</span>
+              <h1 data-i18n="hero.title">Ukus koji se voli!</h1>
+              <div class="hero-offers">
+                <div class="hero-story hero-story-primary">
+                  <p data-i18n="hero.lines.0">Ljubitelj si slatkiša?</p>
+                  <p data-i18n="hero.lines.1">Želiš da iznenadiš voljenu osobu?</p>
+                  <p data-i18n="hero.lines.2">Želiš da poslužiš goste savršenim desertom?</p>
+                  <p class="hero-highlight" data-i18n="hero.lines.3">Kremasti ukusi čekaju baš tebe.</p>
+                  <a class="button button-primary" href="#cakes" data-i18n="hero.primaryCta">Pogledaj cheesecake ponudu</a>
+                </div>
+                <div class="hero-story hero-story-secondary">
+                  <p data-i18n="hero.lines.4">Vodiš računa o namirnicama koje unosiš?</p>
+                  <p data-i18n="hero.lines.5">Vegan si?</p>
+                  <p data-i18n="hero.lines.6">Postiš?</p>
+                  <p class="hero-highlight" data-i18n="hero.lines.7">Probaj našu pažljivo osmišljenu Raw tortu.</p>
+                  <a class="button button-secondary" href="#raw-cake" data-i18n="hero.secondaryCta">Pogledaj Raw Cake</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-slider reveal" data-slider="hero">
+              <div class="slider-track">
+                <article class="hero-slide active">
+                  <img class="hero-slide-image" src="slike/ferrero1.jpeg" alt="Ferrero cheesecake" />
+                  <div class="hero-slide-content">
+                    <span data-i18n="hero.slides.0.kicker">Signature collection</span>
+                    <strong data-i18n="hero.slides.0.title">Elegantni ukusi za svaku priliku</strong>
+                  </div>
+                </article>
+                <article class="hero-slide">
+                  <img class="hero-slide-image" src="slike/lemon1.jpeg" alt="Lemon cheesecake" />
+                  <div class="hero-slide-content">
+                    <span data-i18n="hero.slides.1.kicker">Freshly prepared</span>
+                    <strong data-i18n="hero.slides.1.title">Pravljeni sa merom, nežno i bogato</strong>
+                  </div>
+                </article>
+                <article class="hero-slide">
+                  <img class="hero-slide-image" src="slike/dubai1.jpeg" alt="Dubai cheesecake" />
+                  <div class="hero-slide-content">
+                    <span data-i18n="hero.slides.2.kicker">AS Cake Shop</span>
+                    <strong data-i18n="hero.slides.2.title">Slatki centar tvoje proslave</strong>
+                  </div>
+                </article>
+              </div>
+              <div class="slider-dots" aria-label="Hero slider controls"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section" id="about">
+          <div class="container about-grid">
+            <div class="section-heading reveal">
+              <span class="eyebrow" data-i18n="about.eyebrow">O nama</span>
+              <h2 data-i18n="about.title">Mali studio za velike cheesecake zelje</h2>
+            </div>
+
+            <div class="about-card reveal">
+              <p data-i18n="about.text">
+                AS Cake Shop je mali porodični kutak iz Kaluđerice gde nastaju cheesecake torte
+                sa puno pažnje, kremastim filovima i ukusima koji ostaju u sećanju. Volimo
+                jednostavne recepte oplemenjene bogatim detaljima i pravimo poslastice koje lepo
+                izgledaju, a još lepše se pamte.
+              </p>
+              <div class="about-feature-grid">
+                <div class="about-feature">
+                  <strong data-i18n="about.features.0.title">Ručno pravljeno</strong>
+                  <span data-i18n="about.features.0.text">Svaka torta se slaže pažljivo i bez žurbe.</span>
+                </div>
+                <div class="about-feature">
+                  <strong data-i18n="about.features.1.title">Premium ukusi</strong>
+                  <span data-i18n="about.features.1.text">Bogate kombinacije koje ostavljaju utisak.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-visual reveal" aria-hidden="true">
+              <div class="about-photo"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cakes section" id="cakes">
+          <div class="container product-cluster">
+            <div class="product-cluster-intro reveal">
+              <span class="eyebrow" data-i18n="cakes.eyebrow">Cheesecake meni</span>
+              <h2 data-i18n="cakes.title">Ukusi koji osvajaju na prvi zalogaj</h2>
+              <p data-i18n="cakes.intro">
+                Naša cheesecake ponuda je izdvojena kao posebna kolekcija bogatih, kremastih i
+                pažljivo složenih ukusa za svaku priliku.
+              </p>
+            </div>
+            <div class="cake-list" id="cake-list"></div>
+          </div>
+        </section>
+
+        <section class="raw-cake section" id="raw-cake">
+          <div class="container">
+            <div class="raw-card reveal">
+              <div class="raw-copy">
+                <span class="eyebrow" data-i18n="raw.eyebrow">Raw Cake</span>
+                <h2 data-i18n="raw.title">Laganija poslastica sa pažljivo biranim sastojcima</h2>
+                <p data-i18n="raw.text">
+                  Ako ti je važno kakve namirnice koristiš u ishrani, ova poslastica je stvorena
+                  baš za tebe. Raw Cake kolekcija donosi pun ukus, prirodniji pristup i uživanje
+                  bez kompromisa.
+                </p>
+                <div class="raw-flavors">
+                  <strong data-i18n="raw.flavorsLabel">Ukusi</strong>
+                  <div class="raw-tags">
+                    <span class="meta-pill" data-i18n="raw.flavors.0">Limeta-kokos</span>
+                    <span class="meta-pill" data-i18n="raw.flavors.1">Malina-čokolada</span>
+                  </div>
+                </div>
+                <div class="raw-tags raw-meta">
+                  <span class="meta-pill" data-i18n="raw.weight">Gramaža: 2000g</span>
+                  <span class="meta-pill" data-i18n="raw.price">Cena: 5000 RSD</span>
+                </div>
+                <div class="raw-tags">
+                  <span class="hash-tag">#GlutenFree</span>
+                  <span class="hash-tag">#Vegan</span>
+                  <span class="hash-tag">#Posno</span>
+                </div>
+              </div>
+
+              <div class="raw-media">
+                <video class="raw-video" autoplay muted loop playsinline>
+                  <source src="slike/rawcakemix.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="delivery section" id="delivery">
+          <div class="container delivery-grid">
+            <div class="section-heading reveal">
+              <span class="eyebrow" data-i18n="delivery.eyebrow">Dostava</span>
+              <h2 data-i18n="delivery.title">Izracunaj dostavu iz Kaludjerice</h2>
+              <p data-i18n="delivery.text">
+                Unesi adresu za isporuku, a kalkulator će proceniti udaljenost, cenu dostave i
+                ukupno vreme puta.
+              </p>
+            </div>
+
+            <div class="delivery-card reveal">
+              <form class="delivery-form" id="delivery-form">
+                <label>
+                  <span data-i18n="delivery.originLabel">Polazna lokacija</span>
+                  <input id="delivery-origin" type="text" value="Kaluđerica" readonly tabindex="-1" aria-readonly="true" />
+                </label>
+                <label>
+                  <span data-i18n="delivery.streetLabel">Ulica</span>
+                  <input
+                    id="delivery-street"
+                    type="text"
+                    placeholder="Npr. Bulevar kralja Aleksandra"
+                    data-i18n-placeholder="delivery.streetPlaceholder"
+                    required
+                  />
+                </label>
+                <label>
+                  <span data-i18n="delivery.numberLabel">Broj</span>
+                  <input
+                    id="delivery-number"
+                    type="text"
+                    placeholder="Npr. 245"
+                    data-i18n-placeholder="delivery.numberPlaceholder"
+                    required
+                  />
+                </label>
+                <label>
+                  <span data-i18n="delivery.areaLabel">Naselje / opština</span>
+                  <input
+                    id="delivery-area"
+                    type="text"
+                    placeholder="Npr. Zvezdara"
+                    data-i18n-placeholder="delivery.areaPlaceholder"
+                    required
+                  />
+                </label>
+                <label>
+                  <span data-i18n="delivery.cityLabel">Grad</span>
+                  <input
+                    id="delivery-city"
+                    type="text"
+                    value="Beograd"
+                    readonly
+                    tabindex="-1"
+                    aria-readonly="true"
+                    required
+                  />
+                </label>
+                <button class="button button-primary full" type="submit" data-i18n="delivery.button">
+                  Izračunaj dostavu
+                </button>
+              </form>
+
+              <div class="delivery-status" id="delivery-status" aria-live="polite"></div>
+
+              <div class="delivery-results" id="delivery-results" hidden>
+                <div class="result-card">
+                  <span data-i18n="delivery.results.distance">Udaljenost</span>
+                  <strong id="result-distance">0 km</strong>
+                </div>
+                <div class="result-card">
+                  <span data-i18n="delivery.results.time">Vreme vožnje</span>
+                  <strong id="result-time">0 min</strong>
+                </div>
+                <div class="result-card accent">
+                  <span data-i18n="delivery.results.price">Cena dostave</span>
+                  <strong id="result-price">0 RSD</strong>
+                </div>
+              </div>
+
+              <div class="delivery-map" id="delivery-map-wrap" hidden>
+                <div class="delivery-map-canvas" id="delivery-map" aria-label="Mapa dostave"></div>
+              </div>
+
+              <p class="delivery-note" data-i18n="delivery.note">
+                Cena se računa po formuli: osnovica 250 RSD + 35 RSD po kilometru. Konačna cena
+                se može blago korigovati za posebne uslove dostave.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq section" id="faq">
+          <div class="container">
+            <div class="section-heading center reveal">
+              <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
+              <h2 data-i18n="faq.title">Cesta pitanja</h2>
+            </div>
+            <div class="faq-list" id="faq-list"></div>
+          </div>
+        </section>
+
+        <section class="contact section" id="contact">
+          <div class="container contact-grid">
+            <div class="section-heading reveal">
+              <span class="eyebrow" data-i18n="contact.eyebrow">Kontakt</span>
+              <h2 data-i18n="contact.title">Pisi nam za porudzbine i informacije</h2>
+              <p data-i18n="contact.text">
+                Za poručivanje i informacije možeš nam pisati na mejl ascakeshop@gmail.com ili na
+                Instagram @ascakeshop. Nalazimo se u Kaluđerici i na poruke odgovaramo od 10 do
+                20h.
+              </p>
+            </div>
+
+            <div class="contact-card reveal">
+              <a href="mailto:ascakeshop@gmail.com">ascakeshop@gmail.com</a>
+              <a href="https://instagram.com/ascakeshop" target="_blank" rel="noreferrer">@ascakeshop</a>
+              <p data-i18n="contact.location">Lokacija: Kaluđerica</p>
+              <p data-i18n="contact.hours">Odgovaramo na poruke od 10 do 20h</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/translations.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
