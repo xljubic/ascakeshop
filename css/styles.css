@@ -1117,7 +1117,7 @@ section[id] {
 
 @media (max-width: 840px) {
   :root {
-    --header-height: 68px;
+    --header-height: 82px;
   }
 
   .site-header {
@@ -1126,6 +1126,7 @@ section[id] {
     left: 0;
     right: 0;
     width: 100%;
+    height: var(--header-height);
   }
 
   main {
@@ -1133,13 +1134,14 @@ section[id] {
   }
 
   .nav {
-    min-height: var(--header-height);
+    min-height: 0;
+    height: 100%;
   }
 
   .nav-toggle {
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 46px;
   }
 
   .logo {
@@ -1148,31 +1150,36 @@ section[id] {
   }
 
   .logo-image {
-    width: 42px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
     border-width: 1px;
     box-shadow: none;
   }
 
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .nav-panel {
     position: fixed;
-    inset: 0 0 auto 0;
     top: var(--header-height);
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 1rem;
     background: rgba(255, 245, 205, 0.98);
     border-bottom: 1px solid rgba(100, 66, 48, 0.08);
     display: grid;
     gap: 1rem;
+    opacity: 0;
+    pointer-events: none;
     transform: translateY(-120%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   body.menu-open .nav-panel {
+    opacity: 1;
+    pointer-events: auto;
     transform: translateY(0);
   }
 
