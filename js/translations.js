@@ -79,7 +79,7 @@ window.translations = {
       text: "Ako ti je važno kakve namirnice koristiš u ishrani, ova poslastica je stvorena baš za tebe. Raw Cake kolekcija donosi pun ukus, prirodniji pristup i uživanje bez kompromisa.",
       flavorsLabel: "Ukusi",
       weight: "Gramaža: 2000g",
-      price: "Cena: 5000 RSD",
+      price: "Cena: 6000 RSD",
       flavors: ["Limeta-kokos", "Malina-čokolada"]
     },
     delivery: {
@@ -96,12 +96,33 @@ window.translations = {
       areaPlaceholder: "Npr. Zvezdara",
       cityLabel: "Grad",
       button: "Izračunaj dostavu",
-      note: "Cena se računa po formuli: osnovica 250 RSD + 35 RSD po kilometru. Konačna cena se može blago korigovati za posebne uslove dostave.",
       loading: "Računam rutu i dostavu...",
       noAddress: "Popuni sva polja za dostavu.",
       geocodeError: "Adresa nije pronađena. Probaj da uneseš precizniju lokaciju.",
       routeError: "Ruta trenutno nije dostupna. Pokušaj ponovo za nekoliko trenutaka.",
       mapError: "Mapa trenutno nije dostupna.",
+      info: [
+        {
+          title: "Način dostave",
+          text: "Dostavu vršimo do ulaza u zgradu ili do kapije kuće."
+        },
+        {
+          title: "Termin dostave",
+          text: "Dostave organizujemo u periodu od 10h do 14h, uz prethodan dogovor."
+        },
+        {
+          title: "Lično preuzimanje",
+          text: "Svoju porudžbinu možeš preuzeti i direktno u našoj radionici u Kaluđerici."
+        },
+        {
+          title: "Radno vreme za preuzimanje",
+          text: "Radnim danima 8h-17h, subotom 10h-14h, nedeljom 10h-12h."
+        },
+        {
+          title: "Važna napomena",
+          text: "Za tačan termin i potvrdu porudžbine najbolje je da nam se javiš što ranije."
+        }
+      ],
       results: {
         price: "Cena dostave"
       }
@@ -220,7 +241,7 @@ window.translations = {
       text: "If the ingredients you use in your diet matter to you, this dessert is made for you. Our Raw Cake collection brings full flavor, a more natural approach, and indulgence without compromise.",
       flavorsLabel: "Flavors",
       weight: "Weight: 2000g",
-      price: "Price: 5000 RSD",
+      price: "Price: 6000 RSD",
       flavors: ["Lime-coconut", "Raspberry-chocolate"]
     },
     delivery: {
@@ -237,12 +258,33 @@ window.translations = {
       areaPlaceholder: "For example: Zvezdara",
       cityLabel: "City",
       button: "Calculate delivery",
-      note: "Price formula: 250 RSD base fee + 35 RSD per kilometer. Final delivery cost may be adjusted slightly for special conditions.",
       loading: "Calculating route and delivery...",
       noAddress: "Please fill in all delivery fields.",
       geocodeError: "Address not found. Try entering a more precise location.",
       routeError: "The route is currently unavailable. Please try again in a moment.",
       mapError: "The map is currently unavailable.",
+      info: [
+        {
+          title: "Delivery handoff",
+          text: "We deliver to the building entrance or to the gate of the house."
+        },
+        {
+          title: "Delivery window",
+          text: "Deliveries are organized between 10 AM and 2 PM, with prior agreement."
+        },
+        {
+          title: "Pickup option",
+          text: "You can also pick up your order directly from our workshop in Kaludjerica."
+        },
+        {
+          title: "Pickup hours",
+          text: "Weekdays 8 AM-5 PM, Saturday 10 AM-2 PM, Sunday 10 AM-12 PM."
+        },
+        {
+          title: "Good to know",
+          text: "For an exact time and order confirmation, it is best to message us as early as possible."
+        }
+      ],
       results: {
         price: "Delivery price"
       }
