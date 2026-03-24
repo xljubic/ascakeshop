@@ -1117,11 +1117,45 @@ section[id] {
 
 @media (max-width: 840px) {
   :root {
-    --header-height: 78px;
+    --header-height: 68px;
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  main {
+    padding-top: var(--header-height);
+  }
+
+  .nav {
+    min-height: var(--header-height);
   }
 
   .nav-toggle {
     display: block;
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo {
+    gap: 0.65rem;
+    align-items: center;
+  }
+
+  .logo-image {
+    width: 42px;
+    height: 42px;
+    border-width: 1px;
+    box-shadow: none;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
   }
 
   .nav-panel {
