@@ -10,7 +10,7 @@ window.translations = {
       contact: "Kontakt"
     },
     hero: {
-      eyebrow: "Handmade cheesecake studio",
+      eyebrow: "Handmade cake studio",
       title: "Ukus koji se voli!",
       lines: [
         "Ljubitelj si slatkiša?",
@@ -32,8 +32,8 @@ window.translations = {
     },
     about: {
       eyebrow: "O nama",
-      title: "Mali studio za velike cheesecake zelje",
-      text: "AS Cake Shop je mali porodični kutak iz Kaluđerice gde nastaju cheesecake torte sa puno pažnje, kremastim filovima i ukusima koji ostaju u sećanju. Volimo jednostavne recepte oplemenjene bogatim detaljima i pravimo poslastice koje lepo izgledaju, a još lepše se pamte.",
+      title: "Mali cake studio za velike zelje",
+      text: "AS Cake Shop je mali porodični kutak iz Kaluđerice gde nastaju torte sa puno pažnje, kremastim filovima i ukusima koji ostaju u sećanju. Volimo jednostavne recepte oplemenjene bogatim detaljima i pravimo poslastice koje lepo izgledaju, a još lepše se pamte.",
       features: [
         {
           title: "Ručno pravljeno",
@@ -86,6 +86,7 @@ window.translations = {
       eyebrow: "Dostava",
       title: "Izracunaj dostavu iz Kaludjerice",
       text: "Unesi adresu za isporuku, a kalkulator će proceniti udaljenost, cenu dostave i ukupno vreme puta.",
+      formTitle: "Adresa dostave",
       originLabel: "Polazna lokacija",
       streetLabel: "Ulica",
       streetPlaceholder: "Npr. Bulevar kralja Aleksandra",
@@ -102,8 +103,6 @@ window.translations = {
       routeError: "Ruta trenutno nije dostupna. Pokušaj ponovo za nekoliko trenutaka.",
       mapError: "Mapa trenutno nije dostupna.",
       results: {
-        distance: "Udaljenost",
-        time: "Vreme vožnje",
         price: "Cena dostave"
       }
     },
@@ -133,6 +132,10 @@ window.translations = {
       eyebrow: "Kontakt",
       title: "Pisi nam za porudzbine i informacije",
       text: "Za poručivanje i informacije možeš nam pisati na mejl ascakeshop@gmail.com ili na Instagram @ascakeshop. Nalazimo se u Kaluđerici i na poruke odgovaramo od 10 do 20h.",
+      emailLabel: "Email",
+      instagramLabel: "Instagram",
+      locationLabel: "Lokacija",
+      hoursLabel: "Vreme odgovora",
       location: "Lokacija: Kaluđerica",
       hours: "Odgovaramo na poruke od 10 do 20h"
     }
@@ -148,7 +151,7 @@ window.translations = {
       contact: "Contact"
     },
     hero: {
-      eyebrow: "Handmade cheesecake studio",
+      eyebrow: "Handmade cake studio",
       title: "A flavor to fall in love with!",
       lines: [
         "Do you love desserts?",
@@ -170,8 +173,8 @@ window.translations = {
     },
     about: {
       eyebrow: "About us",
-      title: "A small studio for big cheesecake wishes",
-      text: "AS Cake Shop is a small family corner from Kaludjerica where cheesecake cakes are made with care, creamy fillings, and memorable flavors. We love simple recipes elevated with rich details and create desserts that look beautiful and linger in memory.",
+      title: "A small cake studio for big wishes",
+      text: "AS Cake Shop is a small family corner from Kaludjerica where cakes are made with care, creamy fillings, and memorable flavors. We love simple recipes elevated with rich details and create desserts that look beautiful and linger in memory.",
       features: [
         {
           title: "Handmade",
@@ -224,6 +227,7 @@ window.translations = {
       eyebrow: "Delivery",
       title: "Calculate delivery from Kaludjerica",
       text: "Enter the delivery address and the calculator will estimate distance, delivery price, and driving time.",
+      formTitle: "Delivery address",
       originLabel: "Starting location",
       streetLabel: "Street",
       streetPlaceholder: "For example: Bulevar kralja Aleksandra",
@@ -240,8 +244,6 @@ window.translations = {
       routeError: "The route is currently unavailable. Please try again in a moment.",
       mapError: "The map is currently unavailable.",
       results: {
-        distance: "Distance",
-        time: "Drive time",
         price: "Delivery price"
       }
     },
@@ -271,6 +273,10 @@ window.translations = {
       eyebrow: "Contact",
       title: "Reach out for orders and information",
       text: "For orders and information, write to us at ascakeshop@gmail.com or on Instagram at @ascakeshop. We are based in Kaludjerica and reply to messages from 10 AM to 8 PM.",
+      emailLabel: "Email",
+      instagramLabel: "Instagram",
+      locationLabel: "Location",
+      hoursLabel: "Reply hours",
       location: "Location: Kaludjerica",
       hours: "We reply to messages from 10 AM to 8 PM"
     }

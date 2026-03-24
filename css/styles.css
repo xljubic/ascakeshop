@@ -417,12 +417,12 @@ section[id] {
 }
 
 .hero-slide-content {
-  width: min(300px, 100%);
+  width: min(360px, 100%);
   padding: 1.1rem 1.2rem;
   border-radius: 24px;
   color: white;
-  background: rgba(63, 37, 24, 0.55);
-  backdrop-filter: blur(10px);
+  background: rgba(63, 37, 24, 0.08);
+  backdrop-filter: blur(4px);
   position: relative;
   z-index: 1;
 }
@@ -722,6 +722,13 @@ section[id] {
   gap: 1rem;
 }
 
+.delivery-card-title {
+  font-family: "Chewy", cursive;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1;
+  margin: 0 0 1.2rem;
+}
+
 .delivery-form label {
   display: grid;
   gap: 0.5rem;
@@ -761,9 +768,21 @@ section[id] {
   height: 320px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .delivery-results {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.9rem;
   margin-top: 1rem;
 }
@@ -834,11 +853,52 @@ section[id] {
 .contact-card {
   display: grid;
   gap: 1rem;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at top right, rgba(218, 108, 123, 0.18), transparent 24%),
+    rgba(255, 250, 240, 0.84);
 }
 
 .contact-card a {
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(100, 66, 48, 0.08);
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--accent) 0%, #f0b39a 100%);
+  color: white;
+  font-weight: 800;
+  box-shadow: 0 12px 24px rgba(218, 108, 123, 0.2);
+}
+
+.contact-label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: var(--text-soft);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .reveal {

@@ -40,7 +40,6 @@
     });
 
     $(".nav-toggle").setAttribute("aria-label", state.lang === "sr" ? "Otvori meni" : "Open menu");
-    $("#delivery-origin").value = state.lang === "sr" ? ORIGIN_LABEL : ORIGIN_LABEL_EN;
     $("#delivery-city").value = state.lang === "sr" ? "Beograd" : "Belgrade";
 
     renderCakes();
@@ -397,8 +396,6 @@
         const rawDeliveryPrice = DELIVERY_BASE_PRICE + roundedDistance * DELIVERY_PRICE_PER_KM;
         const deliveryPrice = Math.round(rawDeliveryPrice / 50) * 50;
 
-        $("#result-distance").textContent = `${roundedDistance.toFixed(1)} km`;
-        $("#result-time").textContent = formatMinutes(route.durationMin);
         $("#result-price").textContent = `${deliveryPrice} RSD`;
 
         const mapRendered = updateMap(route.origin, route.destination);
@@ -415,7 +412,6 @@
   }
 
   function init() {
-    $("#delivery-origin").value = ORIGIN_LABEL;
     $("#delivery-city").value = "Beograd";
     bindNav();
     bindLanguageSwitch();

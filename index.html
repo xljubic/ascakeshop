@@ -6,7 +6,7 @@
     <title>AS Cake Shop</title>
     <meta
       name="description"
-      content="AS Cake Shop - cheesecake radionica iz Kaluđerice sa pažljivo pripremljenim ukusima i dostavom."
+      content="AS Cake Shop - cake studio iz Kaluđerice sa pažljivo pripremljenim ukusima i dostavom."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,7 +71,7 @@
         <section class="hero">
           <div class="container hero-grid">
             <div class="hero-copy reveal">
-              <span class="eyebrow" data-i18n="hero.eyebrow">Handmade cheesecake studio</span>
+              <span class="eyebrow" data-i18n="hero.eyebrow">Handmade cake studio</span>
               <h1 data-i18n="hero.title">Ukus koji se voli!</h1>
               <div class="hero-offers">
                 <div class="hero-story hero-story-primary">
@@ -216,11 +216,8 @@
             </div>
 
             <div class="delivery-card reveal">
+              <h3 class="delivery-card-title" data-i18n="delivery.formTitle">Adresa dostave</h3>
               <form class="delivery-form" id="delivery-form">
-                <label>
-                  <span data-i18n="delivery.originLabel">Polazna lokacija</span>
-                  <input id="delivery-origin" type="text" value="Kaluđerica" readonly tabindex="-1" aria-readonly="true" />
-                </label>
                 <label>
                   <span data-i18n="delivery.streetLabel">Ulica</span>
                   <input
@@ -271,14 +268,6 @@
               <div class="delivery-status" id="delivery-status" aria-live="polite"></div>
 
               <div class="delivery-results" id="delivery-results" hidden>
-                <div class="result-card">
-                  <span data-i18n="delivery.results.distance">Udaljenost</span>
-                  <strong id="result-distance">0 km</strong>
-                </div>
-                <div class="result-card">
-                  <span data-i18n="delivery.results.time">Vreme vožnje</span>
-                  <strong id="result-time">0 min</strong>
-                </div>
                 <div class="result-card accent">
                   <span data-i18n="delivery.results.price">Cena dostave</span>
                   <strong id="result-price">0 RSD</strong>
@@ -320,10 +309,34 @@
             </div>
 
             <div class="contact-card reveal">
-              <a href="mailto:ascakeshop@gmail.com">ascakeshop@gmail.com</a>
-              <a href="https://instagram.com/ascakeshop" target="_blank" rel="noreferrer">@ascakeshop</a>
-              <p data-i18n="contact.location">Lokacija: Kaluđerica</p>
-              <p data-i18n="contact.hours">Odgovaramo na poruke od 10 do 20h</p>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">@</span>
+                <div>
+                  <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+                  <a href="mailto:ascakeshop@gmail.com">ascakeshop@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">IG</span>
+                <div>
+                  <span class="contact-label" data-i18n="contact.instagramLabel">Instagram</span>
+                  <a href="https://instagram.com/ascakeshop" target="_blank" rel="noreferrer">@ascakeshop</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">P</span>
+                <div>
+                  <span class="contact-label" data-i18n="contact.locationLabel">Lokacija</span>
+                  <p data-i18n="contact.location">Lokacija: Kaluđerica</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">H</span>
+                <div>
+                  <span class="contact-label" data-i18n="contact.hoursLabel">Vreme odgovora</span>
+                  <p data-i18n="contact.hours">Odgovaramo na poruke od 10 do 20h</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
