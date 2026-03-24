@@ -185,6 +185,28 @@ section[id] {
   background: var(--accent-soft);
 }
 
+.nav-highlight {
+  border-radius: 999px;
+}
+
+.nav-highlight > a,
+.nav-highlight > .dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+}
+
+.nav-highlight-cake > .dropdown-toggle {
+  background: rgba(218, 108, 123, 0.14);
+}
+
+.nav-highlight-raw > a {
+  background: rgba(137, 180, 112, 0.16);
+}
+
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -1039,6 +1061,11 @@ section[id] {
   .nav-links a,
   .dropdown-toggle {
     width: 100%;
+  }
+
+  .nav-highlight > a,
+  .nav-highlight > .dropdown-toggle {
+    justify-content: flex-start;
   }
 
   .dropdown-toggle {
