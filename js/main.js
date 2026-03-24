@@ -195,6 +195,31 @@
     });
   }
 
+  function bindHeroTilt() {
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      return;
+    }
+
+    $$(".hero-story").forEach((card) => {
+      card.addEventListener("mousemove", (event) => {
+        const bounds = card.getBoundingClientRect();
+        const x = (event.clientX - bounds.left) / bounds.width;
+        const y = (event.clientY - bounds.top) / bounds.height;
+        const rotateY = (x - 0.5) * 7;
+        const rotateX = (0.5 - y) * 7;
+
+        card.classList.add("is-tilting");
+        card.style.transform =
+          `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-2px)`;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.classList.remove("is-tilting");
+        card.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0)";
+      });
+    });
+  }
+
   function initHeroSlider() {
     $$("[data-slider='hero']").forEach((slider) => {
       const slides = $$(".hero-slide", slider);
@@ -415,6 +440,7 @@
     $("#delivery-city").value = "Beograd";
     bindNav();
     bindLanguageSwitch();
+    bindHeroTilt();
     initHeroSlider();
     applyTranslations();
     bindDeliveryForm();
