@@ -906,6 +906,11 @@ section[id] {
     width: 100%;
   }
 
+  .dropdown-toggle {
+    text-align: left;
+    display: block;
+  }
+
   .dropdown-menu {
     position: static;
     opacity: 1;
