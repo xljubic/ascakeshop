@@ -124,13 +124,41 @@
   function bindGalleryControls() {
     $$(".cake-gallery").forEach((gallery) => {
       const stage = $(".gallery-stage", gallery);
-      $$(".gallery-thumb", gallery).forEach((thumb) => {
+      const thumbs = $$(".gallery-thumb", gallery);
+      let activeIndex = thumbs.findIndex((thumb) => thumb.classList.contains("active"));
+      let intervalId = null;
+
+      function showImage(nextIndex) {
+        activeIndex = nextIndex;
+        stage.style.backgroundImage = `url('${thumbs[activeIndex].dataset.image}')`;
+        thumbs.forEach((item, itemIndex) => item.classList.toggle("active", itemIndex === activeIndex));
+      }
+
+      function startAutoplay() {
+        if (thumbs.length < 2) {
+          return;
+        }
+
+        intervalId = setInterval(() => {
+          showImage((activeIndex + 1) % thumbs.length);
+        }, 2800);
+      }
+
+      function restartAutoplay() {
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
+        startAutoplay();
+      }
+
+      thumbs.forEach((thumb, thumbIndex) => {
         thumb.addEventListener("click", () => {
-          stage.style.backgroundImage = `url('${thumb.dataset.image}')`;
-          $$(".gallery-thumb", gallery).forEach((item) => item.classList.remove("active"));
-          thumb.classList.add("active");
+          showImage(thumbIndex);
+          restartAutoplay();
         });
       });
+
+      startAutoplay();
     });
   }
 
@@ -436,6 +464,52 @@
     });
   }
 
+  function bindImageLightbox() {
+    const lightbox = $("#image-lightbox");
+    const image = $("#image-lightbox-image");
+    const closeButton = $("#image-lightbox-close");
+    const backdrop = $("#image-lightbox-backdrop");
+
+    if (!lightbox || !image || !closeButton || !backdrop) {
+      return;
+    }
+
+    function openLightbox(source, alt) {
+      image.src = source;
+      image.alt = alt || "";
+      lightbox.hidden = false;
+      document.body.classList.add("lightbox-open");
+    }
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      image.src = "";
+      image.alt = "";
+      document.body.classList.remove("lightbox-open");
+    }
+
+    $$("[data-zoom-src]").forEach((trigger) => {
+      const openFromTrigger = () => openLightbox(trigger.dataset.zoomSrc, trigger.dataset.zoomAlt);
+
+      trigger.addEventListener("click", openFromTrigger);
+      trigger.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openFromTrigger();
+        }
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    backdrop.addEventListener("click", closeLightbox);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !lightbox.hidden) {
+        closeLightbox();
+      }
+    });
+  }
+
   function init() {
     $("#delivery-city").value = "Beograd";
     bindNav();
@@ -444,6 +518,7 @@
     initHeroSlider();
     applyTranslations();
     bindDeliveryForm();
+    bindImageLightbox();
     revealVisibleElements();
   }
 

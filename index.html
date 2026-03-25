@@ -49,11 +49,13 @@
                   <li><a href="#cake-dubai" data-i18n="cakes.dubai.name">Dubai Cheesecake</a></li>
                   <li><a href="#cake-ferrero" data-i18n="cakes.ferrero.name">Ferrero Cheesecake</a></li>
                   <li><a href="#cake-lemon" data-i18n="cakes.lemon.name">Lemon Cheesecake</a></li>
-                  <li><a href="#cake-pistachio" data-i18n="cakes.pistachio.name">Pistać-Malina Cheesecake</a></li>
+                  <li><a href="#cake-pistachio" data-i18n="cakes.pistachio.name">Pistac-Malina Cheesecake</a></li>
                   <li><a href="#cake-speculaas" data-i18n="cakes.speculaas.name">Speculaas Cheesecake</a></li>
                 </ul>
               </li>
+              <li class="nav-highlight nav-highlight-cups"><a href="#cups" data-i18n="nav.cups">Čašice</a></li>
               <li class="nav-highlight nav-highlight-raw"><a href="#raw-cake" data-i18n="nav.rawCake">Raw Cake</a></li>
+              <li class="nav-highlight nav-highlight-tarts"><a href="#tarts" data-i18n="nav.tarts">Tartovi</a></li>
               <li><a href="#delivery" data-i18n="nav.delivery">Dostava</a></li>
               <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
               <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
@@ -78,18 +80,28 @@
             <div class="hero-copy reveal">
               <div class="hero-offers">
                 <div class="hero-story hero-story-primary">
-                  <p data-i18n="hero.lines.0">Ljubitelj si slatkiša?</p>
-                  <p data-i18n="hero.lines.1">Želiš da iznenadiš voljenu osobu?</p>
-                  <p data-i18n="hero.lines.2">Želiš da poslužiš goste savršenim desertom?</p>
-                  <p class="hero-highlight" data-i18n="hero.lines.3">Kremasti ukusi čekaju baš tebe.</p>
-                  <a class="button button-primary" href="#cakes" data-i18n="hero.primaryCta">Pogledaj cheesecake ponudu</a>
+                  <p data-i18n="hero.cards.cheesecake.questions.0">Ljubitelj si slatkiša?</p>
+                  <p data-i18n="hero.cards.cheesecake.questions.1">Želiš da poslužiš goste savršenim desertom?</p>
+                  <p class="hero-highlight" data-i18n="hero.cards.cheesecake.highlight">Kremasti ukusi čekaju baš tebe.</p>
+                  <a class="button button-secondary" href="#cakes" data-i18n="hero.cards.cheesecake.cta">Pogledaj cheesecake ponudu</a>
+                </div>
+                <div class="hero-story hero-story-tarts">
+                  <p data-i18n="hero.cards.tarts.questions.0">Tražiš sitne zalogaje za posluženje?</p>
+                  <p data-i18n="hero.cards.tarts.questions.1">Želiš elegantan desert za poklon ili slavlje?</p>
+                  <p class="hero-highlight" data-i18n="hero.cards.tarts.highlight">Tartovi donose više ukusa u jednoj kutiji.</p>
+                  <a class="button button-secondary" href="#tarts" data-i18n="hero.cards.tarts.cta">Pogledaj tartove</a>
+                </div>
+                <div class="hero-story hero-story-cups">
+                  <p data-i18n="hero.cards.cups.questions.0">Želiš praktičan desert za više ljudi?</p>
+                  <p data-i18n="hero.cards.cups.questions.1">Voliš da na stolu ima više različitih ukusa?</p>
+                  <p class="hero-highlight" data-i18n="hero.cards.cups.highlight">Čašice su savršene za slatki sto i posluženje.</p>
+                  <a class="button button-secondary" href="#cups" data-i18n="hero.cards.cups.cta">Pogledaj čašice</a>
                 </div>
                 <div class="hero-story hero-story-secondary">
-                  <p data-i18n="hero.lines.4">Vodiš računa o namirnicama koje unosiš?</p>
-                  <p data-i18n="hero.lines.5">Vegan si?</p>
-                  <p data-i18n="hero.lines.6">Postiš?</p>
-                  <p class="hero-highlight" data-i18n="hero.lines.7">Probaj našu pažljivo osmišljenu Raw tortu.</p>
-                  <a class="button button-secondary" href="#raw-cake" data-i18n="hero.secondaryCta">Pogledaj Raw Cake</a>
+                  <p data-i18n="hero.cards.raw.questions.0">Vodiš računa o namirnicama koje unosiš?</p>
+                  <p data-i18n="hero.cards.raw.questions.1">Vegan si ili postiš?</p>
+                  <p class="hero-highlight" data-i18n="hero.cards.raw.highlight">Probaj našu pažljivo osmišljenu Raw tortu.</p>
+                  <a class="button button-secondary button-raw" href="#raw-cake" data-i18n="hero.cards.raw.cta">Pogledaj Raw Cake</a>
                 </div>
               </div>
             </div>
@@ -128,20 +140,21 @@
           <div class="container about-grid">
             <div class="section-heading reveal">
               <span class="eyebrow" data-i18n="about.eyebrow">O nama</span>
-              <h2 data-i18n="about.title">Mali studio za velike cheesecake zelje</h2>
+              <h2 data-i18n="about.title">Umetnicki cake studio za velike zelje</h2>
             </div>
 
+            <div class="about-content">
             <div class="about-card reveal">
               <p data-i18n="about.text">
-                AS Cake Shop je mali porodični kutak iz Kaluđerice gde nastaju cheesecake torte
-                sa puno pažnje, kremastim filovima i ukusima koji ostaju u sećanju. Volimo
-                jednostavne recepte oplemenjene bogatim detaljima i pravimo poslastice koje lepo
-                izgledaju, a još lepše se pamte.
+                AS Cake Shop je slatki kutak iz Kaluđerice gde nastaju deserti sa puno pažnje,
+                kremastim filovima i ukusima koji ostaju u sećanju. Volimo jednostavne recepte
+                oplemenjene bogatim detaljima i pravimo poslastice koje lepo izgledaju, a još
+                lepše se degustiraju.
               </p>
               <div class="about-feature-grid">
                 <div class="about-feature">
                   <strong data-i18n="about.features.0.title">Ručno pravljeno</strong>
-                  <span data-i18n="about.features.0.text">Svaka torta se slaže pažljivo i bez žurbe.</span>
+                  <span data-i18n="about.features.0.text">Svaka poslastica se slaže pažljivo i bez žurbe.</span>
                 </div>
                 <div class="about-feature">
                   <strong data-i18n="about.features.1.title">Premium ukusi</strong>
@@ -150,8 +163,24 @@
               </div>
             </div>
 
-            <div class="about-visual reveal" aria-hidden="true">
-              <div class="about-photo"></div>
+            <div class="about-visual reveal">
+              <div class="about-nav-panel">
+                <div class="about-nav-grid">
+                  <a class="about-nav-card" href="#cakes">
+                    <span data-i18n="about.quickLinks.cheesecake">CHEESECAKE</span>
+                  </a>
+                  <a class="about-nav-card" href="#tarts">
+                    <span data-i18n="about.quickLinks.tarts">TARTOVI</span>
+                  </a>
+                  <a class="about-nav-card" href="#cups">
+                    <span data-i18n="about.quickLinks.cups">CASICE</span>
+                  </a>
+                  <a class="about-nav-card" href="#raw-cake">
+                    <span data-i18n="about.quickLinks.raw">RAW CAKE</span>
+                  </a>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </section>
@@ -170,12 +199,154 @@
           </div>
         </section>
 
+        <section class="cups section" id="cups">
+          <div class="container">
+            <div class="section-heading center reveal">
+              <span class="eyebrow" data-i18n="cups.eyebrow">Casice</span>
+              <h2 data-i18n="cups.title">Slatke casice za svaku priliku</h2>
+              <p data-i18n="cups.text">
+                Čokoladne čašice u više ukusa idealne su za posluženje, slatki sto i trenutke kada želiš
+                više različitih zalogaja u jednoj kutiji.
+              </p>
+            </div>
+
+            <div class="cups-grid">
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-dark">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/crna-cokolada.png" alt="Crna čokolada čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.darkChocolate.name">Crna čokolada</h3>
+                  <p data-i18n="cups.items.darkChocolate.text">Intenzivna i bogata čokoladna čašica za ljubitelje punog kakao ukusa.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-ferrero">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/ferrero-casica.png" alt="Ferrero čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.ferrero.name">Ferrero</h3>
+                  <p data-i18n="cups.items.ferrero.text">Lešnik, krem i čokolada u elegantnoj Ferrero varijanti koja uvek privlači pažnju.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-strawberry">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/jagoda-casica.png" alt="Jagoda čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.strawberry.name">Jagoda</h3>
+                  <p data-i18n="cups.items.strawberry.text">Voćna i nežna čašica sa jagodom, lagana za posluženje i prijatna u svakom zalogaju.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-lemon">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/limun-casica.png" alt="Limun čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.lemon.name">Limun</h3>
+                  <p data-i18n="cups.items.lemon.text">Sveža i kremasta čašica sa limun notom za one koji vole laganiji ukus.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-mango">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/mango-krem-casica.png" alt="Mango krem čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.mango.name">Mango krem</h3>
+                  <p data-i18n="cups.items.mango.text">Kremasta i sunčana kombinacija manga koja daje tropski utisak i blag voćni ton.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-mocha">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/moka-malina.png" alt="Moka-malina čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.mochaRaspberry.name">Moka-malina</h3>
+                  <p data-i18n="cups.items.mochaRaspberry.text">Spoj kafe i maline donosi upečatljiv kontrast, malo ozbiljniji i vrlo zanimljiv ukus.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-pistachio">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/pistac-malina.png" alt="Pistać-malina čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.pistachioRaspberry.name">Pistać-malina</h3>
+                  <p data-i18n="cups.items.pistachioRaspberry.text">Pistać i malina u prefinjenom, kremastom spoju koji izgleda elegantno i vrlo moderno.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-raffaello">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/raffaello.png" alt="Raffaello čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.raffaello.name">Raffaello</h3>
+                  <p data-i18n="cups.items.raffaello.text">Nežna kokosasta čašica sa finom slatkoćom i laganim, elegantnim karakterom.</p>
+                </div>
+              </article>
+
+              <article class="cup-card reveal">
+                <div class="cup-visual cup-visual-twix">
+                  <div class="cup-orb"></div>
+                  <img class="cup-image" src="slike/casice/twix-casica.png" alt="Twix čašica" />
+                </div>
+                <div class="cup-copy">
+                  <h3 data-i18n="cups.items.twix.name">Twix</h3>
+                  <p data-i18n="cups.items.twix.text">Karamel i čokoladni utisak u zabavnoj Twix čašici koja deluje bogato i dopadljivo.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="cups-box reveal">
+              <div class="cups-box-copy">
+                <span class="eyebrow" data-i18n="cups.box.eyebrow">Kutija</span>
+                <h3 data-i18n="cups.box.title">Casice u jednoj kutiji za vise ukusa</h3>
+                <p data-i18n="cups.box.text">
+                  Čašice se prodaju kao jedna kutija od 63 komada, idealna za veća okupljanja, proslave i
+                  posluženje sa više različitih ukusa.
+                </p>
+                <div class="cups-box-meta">
+                  <div class="meta-pill" data-i18n="cups.box.size">Kutija: 63 kom</div>
+                  <div class="meta-pill" data-i18n="cups.box.weight">Gramaža: ~1300g</div>
+                  <div class="meta-pill" data-i18n="cups.box.price">Cena: 3500 RSD</div>
+                </div>
+              </div>
+
+              <figure
+                class="cups-box-card"
+                data-zoom-src="slike/casice/KUTIJA-casice.png"
+                data-zoom-alt="Kutija čašica"
+                tabindex="0"
+                role="button"
+                aria-label="Prikaži uvećanu sliku kutije čašica"
+              >
+                <img src="slike/casice/KUTIJA-casice.png" alt="Kutija čašica" />
+                <figcaption data-i18n="cups.box.label">Kutija čašica</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
         <section class="raw-cake section" id="raw-cake">
           <div class="container">
             <div class="raw-card reveal">
               <div class="raw-copy">
                 <span class="eyebrow" data-i18n="raw.eyebrow">Raw Cake</span>
-                <h2 data-i18n="raw.title">Laganija poslastica sa pažljivo biranim sastojcima</h2>
+                <h2 data-i18n="raw.title">Laganija poslastica sa pazljivo biranim sastojcima</h2>
                 <p data-i18n="raw.text">
                   Ako ti je važno kakve namirnice koristiš u ishrani, ova poslastica je stvorena
                   baš za tebe. Raw Cake kolekcija donosi pun ukus, prirodniji pristup i uživanje
@@ -189,8 +360,21 @@
                   </div>
                 </div>
                 <div class="raw-tags raw-meta">
-                  <span class="meta-pill" data-i18n="raw.weight">Gramaža: 2000g</span>
-                  <span class="meta-pill" data-i18n="raw.price">Cena: 6000 RSD</span>
+                  <span class="meta-pill" data-i18n="raw.weight">Gramaža: ~2000g</span>
+                </div>
+                <div class="raw-pricing">
+                  <div class="raw-price-card">
+                    <strong data-i18n="raw.pricing.0.label">Ukus 1: Limeta-kokos</strong>
+                    <span data-i18n="raw.pricing.0.price">6000 RSD</span>
+                  </div>
+                  <div class="raw-price-card">
+                    <strong data-i18n="raw.pricing.1.label">Ukus 2: Malina-čokolada</strong>
+                    <span data-i18n="raw.pricing.1.price">6000 RSD</span>
+                  </div>
+                  <div class="raw-price-card raw-price-card-accent">
+                    <strong data-i18n="raw.pricing.2.label">Kombinacija dva ukusa</strong>
+                    <span data-i18n="raw.pricing.2.price">6500 RSD</span>
+                  </div>
                 </div>
                 <div class="raw-tags">
                   <span class="hash-tag">#GlutenFree</span>
@@ -208,15 +392,125 @@
           </div>
         </section>
 
+        <section class="tarts section" id="tarts">
+          <div class="container">
+            <div class="section-heading center reveal">
+              <span class="eyebrow" data-i18n="tarts.eyebrow">Tartovi</span>
+              <h2 data-i18n="tarts.title">Mali zalogaji koji osvajaju na prvi pogled</h2>
+              <p data-i18n="tarts.text">
+                Birani ukusi, elegantan izgled i savršena forma za posluženje na slavljima,
+                druženjima i slatkim stolovima.
+              </p>
+            </div>
+
+            <div class="tart-grid">
+              <article class="tart-card reveal">
+                <div class="tart-visual tart-visual-ferrero">
+                  <div class="tart-orb"></div>
+                  <img class="tart-image" src="slike/tartovi/ferrero-tart.png" alt="Ferrero tart" />
+                </div>
+                <div class="tart-copy">
+                  <h3 data-i18n="tarts.items.ferrero.name">Ferrero Tart</h3>
+                  <p data-i18n="tarts.items.ferrero.text">
+                    Bogat čokoladni zalogaj sa lešnik notom i luksuznim Ferrero utiskom.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tart-card reveal">
+                <div class="tart-visual tart-visual-pistachio">
+                  <div class="tart-orb"></div>
+                  <img class="tart-image" src="slike/tartovi/pistac-malina-tart.png" alt="Pistać-malina tart" />
+                </div>
+                <div class="tart-copy">
+                  <h3 data-i18n="tarts.items.pistachio.name">Pistać-Malina Tart</h3>
+                  <p data-i18n="tarts.items.pistachio.text">
+                    Pistać i malina u svežem i kremastom spoju koji izgleda nežno, a pamti se dugo.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tart-card reveal">
+                <div class="tart-visual tart-visual-raffaello">
+                  <div class="tart-orb"></div>
+                  <img class="tart-image" src="slike/tartovi/raffaello-tart.png" alt="Raffaello tart" />
+                </div>
+                <div class="tart-copy">
+                  <h3 data-i18n="tarts.items.raffaello.name">Raffaello Tart</h3>
+                  <p data-i18n="tarts.items.raffaello.text">
+                    Laganiji kremasti tart sa kokos notom za one koji vole nežnije i elegantne ukuse.
+                  </p>
+                </div>
+              </article>
+
+              <article class="tart-card reveal">
+                <div class="tart-visual tart-visual-tropico">
+                  <div class="tart-orb"></div>
+                  <img class="tart-image" src="slike/tartovi/tropico-tart.png" alt="Tropico tart" />
+                </div>
+                <div class="tart-copy">
+                  <h3 data-i18n="tarts.items.tropico.name">Tropico Tart</h3>
+                  <p data-i18n="tarts.items.tropico.text">
+                    Voćni i osvežavajući tart koji donosi tropski osećaj u svakom zalogaju.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="tart-boxes reveal">
+              <div class="tart-box-copy">
+                <span class="eyebrow" data-i18n="tarts.boxes.eyebrow">Kutije</span>
+                <h3 data-i18n="tarts.boxes.title">Tartovi kao mala ili velika kutija</h3>
+                <p data-i18n="tarts.boxes.text">
+                  Idealni za posluženje na proslavama, poklon kutije ili kada želiš više ukusa u
+                  jednom pakovanju.
+                </p>
+                <div class="meta-pill" data-i18n="tarts.boxes.unitWeight">Gramaža 1 tarta: ~25g</div>
+                <div class="tart-box-meta">
+                  <div class="tart-price-card">
+                    <strong data-i18n="tarts.boxes.small">Mala kutija: 18 kom</strong>
+                    <span data-i18n="tarts.boxes.smallPrice">Cena: 1800 RSD</span>
+                  </div>
+                  <div class="tart-price-card">
+                    <strong data-i18n="tarts.boxes.large">Velika kutija: 48 kom</strong>
+                    <span data-i18n="tarts.boxes.largePrice">Cena: 4000 RSD</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tart-box-gallery">
+                <figure
+                  class="tart-box-card"
+                  data-zoom-src="slike/tartovi/KUTIJA-MALA-tart.png"
+                  data-zoom-alt="Mala kutija tartova"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Prikaži uvećanu sliku male kutije tartova"
+                >
+                  <img src="slike/tartovi/KUTIJA-MALA-tart.png" alt="Mala kutija tartova" />
+                  <figcaption data-i18n="tarts.boxes.smallLabel">Mala kutija</figcaption>
+                </figure>
+                <figure
+                  class="tart-box-card"
+                  data-zoom-src="slike/tartovi/KUTIJA-VELIKA-tart.png"
+                  data-zoom-alt="Velika kutija tartova"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Prikaži uvećanu sliku velike kutije tartova"
+                >
+                  <img src="slike/tartovi/KUTIJA-VELIKA-tart.png" alt="Velika kutija tartova" />
+                  <figcaption data-i18n="tarts.boxes.largeLabel">Velika kutija</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="delivery section" id="delivery">
           <div class="container delivery-grid">
             <div class="section-heading reveal delivery-info-card">
               <span class="eyebrow" data-i18n="delivery.eyebrow">Dostava</span>
-              <h2 data-i18n="delivery.title">Izracunaj dostavu iz Kaludjerice</h2>
-              <p data-i18n="delivery.text">
-                Unesi adresu za isporuku, a kalkulator će proceniti udaljenost, cenu dostave i
-                ukupno vreme puta.
-              </p>
+              <h2 data-i18n="delivery.infoTitle">Informacije o dostavi</h2>
                 <div class="delivery-points">
                   <div class="delivery-point">
                     <strong data-i18n="delivery.info.0.title">Način dostave</strong>
@@ -242,7 +536,11 @@
             </div>
 
             <div class="delivery-card reveal">
-              <h3 class="delivery-card-title" data-i18n="delivery.formTitle">Adresa dostave</h3>
+              <span class="eyebrow" data-i18n="delivery.eyebrow">Dostava</span>
+              <h2 data-i18n="delivery.title">Izracunaj dostavu iz Kaludjerice</h2>
+              <p data-i18n="delivery.text">
+                Unesi tačnu adresu za isporuku, a kalkulator će proceniti cenu dostave.
+              </p>
               <form class="delivery-form" id="delivery-form">
                 <label>
                   <span data-i18n="delivery.streetLabel">Ulica</span>
@@ -321,26 +619,26 @@
           <div class="container contact-grid">
             <div class="section-heading reveal">
               <span class="eyebrow" data-i18n="contact.eyebrow">Kontakt</span>
-              <h2 data-i18n="contact.title">Pisi nam za porudzbine i informacije</h2>
+              <h2 data-i18n="contact.title">Javi nam se za porudžbine i informacije</h2>
               <p data-i18n="contact.text">
-                Za poručivanje i informacije možeš nam pisati na mejl ascakeshop@gmail.com ili na
-                Instagram @ascakeshop. Nalazimo se u Kaluđerici i na poruke odgovaramo od 10 do
-                20h.
+                Za poručivanje i informacije možeš nam pisati na Instagram @as.cakeshop, pozvati
+                nas na broj +381 65 3591682, a dostupni smo i na Viberu i na WhatsAppu. Za mejl
+                upite piši nam na ascakeshopas@gmail.com.
               </p>
-            </div>
-
-            <div class="contact-card reveal">
-              <div class="contact-item">
+              <div class="contact-side-note">
                 <span class="contact-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="presentation">
-                    <path d="M4 6.5h16A1.5 1.5 0 0 1 21.5 8v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5Zm0 1a.5.5 0 0 0-.5.5v.2l8.5 5.4 8.5-5.4V8a.5.5 0 0 0-.5-.5H4Zm16.5 1.88-6.8 4.32a3 3 0 0 1-3.22 0L3.5 9.38V16a.5.5 0 0 0 .5.5h16a.5.5 0 0 0 .5-.5V9.38Z"/>
+                    <path d="M12 2.75a.75.75 0 0 1 .75.75v8.19l4.03 2.33a.75.75 0 1 1-.76 1.3l-4.4-2.55a.75.75 0 0 1-.37-.65V3.5a.75.75 0 0 1 .75-.75Zm0 19a9 9 0 1 1 0-18 9 9 0 0 1 0 18Zm0-1.5A7.5 7.5 0 1 0 12 5.25a7.5 7.5 0 0 0 0 15Z"/>
                   </svg>
                 </span>
                 <div>
-                  <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
-                  <a href="mailto:ascakeshop@gmail.com">ascakeshop@gmail.com</a>
+                  <span class="contact-label" data-i18n="contact.hoursLabel">Vreme odgovora</span>
+                  <p data-i18n="contact.hours">Odgovaramo svakog dana od 10h do 20h.</p>
                 </div>
               </div>
+            </div>
+
+            <div class="contact-card reveal">
               <div class="contact-item">
                 <span class="contact-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="presentation">
@@ -349,7 +647,29 @@
                 </span>
                 <div>
                   <span class="contact-label" data-i18n="contact.instagramLabel">Instagram</span>
-                  <a href="https://instagram.com/ascakeshop" target="_blank" rel="noreferrer">@ascakeshop</a>
+                  <a href="https://instagram.com/as.cakeshop" target="_blank" rel="noreferrer">@as.cakeshop</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.11.37 2.3.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1c0 1.27.2 2.46.57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label" data-i18n="contact.phoneLabel">Telefon (Viber i WhatsApp)</span>
+                  <a href="tel:+381653591682">+381 65 3591682</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M4 6.5h16A1.5 1.5 0 0 1 21.5 8v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5Zm0 1a.5.5 0 0 0-.5.5v.2l8.5 5.4 8.5-5.4V8a.5.5 0 0 0-.5-.5H4Zm16.5 1.88-6.8 4.32a3 3 0 0 1-3.22 0L3.5 9.38V16a.5.5 0 0 0 .5.5h16a.5.5 0 0 0 .5-.5V9.38Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+                  <a href="mailto:ascakeshopas@gmail.com">ascakeshopas@gmail.com</a>
                 </div>
               </div>
               <div class="contact-item">
@@ -360,24 +680,23 @@
                 </span>
                 <div>
                   <span class="contact-label" data-i18n="contact.locationLabel">Lokacija</span>
-                  <p data-i18n="contact.location">Lokacija: Kaluđerica</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="presentation">
-                    <path d="M12 3.25A8.75 8.75 0 1 1 3.25 12 8.76 8.76 0 0 1 12 3.25Zm0 1.5A7.25 7.25 0 1 0 19.25 12 7.26 7.26 0 0 0 12 4.75Zm.75 3.5v3.44l2.72 1.81-.84 1.24-3.06-2.04A.75.75 0 0 1 11.25 12V8.25h1.5Z"/>
-                  </svg>
-                </span>
-                <div>
-                  <span class="contact-label" data-i18n="contact.hoursLabel">Vreme odgovora</span>
-                  <p data-i18n="contact.hours">Odgovaramo na poruke od 10 do 20h</p>
+                  <p data-i18n="contact.location">Hercegovačka 35, Kaluđerica</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </main>
+
+      <div class="image-lightbox" id="image-lightbox" hidden>
+        <button class="image-lightbox-close" id="image-lightbox-close" type="button" aria-label="Zatvori uvećanu sliku">
+          ×
+        </button>
+        <div class="image-lightbox-backdrop" id="image-lightbox-backdrop"></div>
+        <div class="image-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Uvećana slika proizvoda">
+          <img id="image-lightbox-image" src="" alt="" />
+        </div>
+      </div>
     </div>
 
     <script src="js/data.js"></script>
@@ -390,3 +709,4 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
